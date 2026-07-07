@@ -1,4 +1,3 @@
-# Password-Checker
 # Password Strength Checker
 
 A password strength assessment tool available in three forms: a command-line script, a desktop GUI, and a standalone web app. It evaluates a password's strength using length, character variety, Shannon-style entropy, and a common/leaked password check.
@@ -6,6 +5,18 @@ A password strength assessment tool available in three forms: a command-line scr
 Built as **Project 1** for the DecodeLabs Industrial Training Kit (Batch 2026), then extended beyond the original brief with entropy scoring and crack-time estimation.
 
 **[Live demo](#)** — enable GitHub Pages (see below) and drop the link here.
+
+---
+
+## Project Evolution
+
+This project was built in three stages, each one extending the last:
+
+1. **`password_checker.py`** — the original DecodeLabs Project 1 brief: a CLI tool that checks a password's length and character variety, and classifies it as Weak / Medium / Strong. This satisfies the core requirement: string handling, conditional logic, and basic security thinking.
+2. **`password_checker_gui.py`** — the same logic wrapped in a Tkinter desktop interface, to explore what the tool looks like as something a non-technical user could actually interact with, live, instead of reading terminal output.
+3. **`password_checker.html`** — a full rebuild of the scoring engine using entropy (`length × log2(pool size)`) and a crack-time estimate instead of a simple point system, plus pattern detection (sequential runs, repeated characters). Shipped as a self-contained web app so it can be opened by anyone with zero setup.
+
+Each stage kept the same core question — *is this password actually safe?* — but pushed the answer to be more accurate and more accessible.
 
 ---
 
