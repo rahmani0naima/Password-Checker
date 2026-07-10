@@ -4,7 +4,7 @@ A password strength assessment tool available in three forms: a command-line scr
 
 Built as **Project 1** for the DecodeLabs Industrial Training Kit (Batch 2026), then extended beyond the original brief with entropy scoring and crack-time estimation.
 
-**[Live demo](#)** — enable GitHub Pages (see below) and drop the link here.
+
 
 ---
 
